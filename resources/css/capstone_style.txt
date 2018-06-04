@@ -1,0 +1,255 @@
+/* Universal Styles */
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+body {
+}
+
+header {
+/*  border: 1px solid #fff; */  /* For debugging */
+  /*
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  border-bottom: solid 1px #c6c1c1;
+  */
+  background-color: white;
+}
+
+header .content {
+border: 1px solid #fff;  /* For debugging */
+}
+
+header .desktop {
+  border: 1px solid  gray;
+  display: flex;;
+  align-items: center;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  height: 4rem;
+/*  flex: 1; */
+  /*
+  width: 25.625rem;
+  margin-top: 2rem; */
+}
+.academy_name {
+/*  border: 1px solid red; */ /* For debugging */
+  display: flex;
+  align-items: center;
+
+}
+.academy_name img {
+  height: 2rem;
+}
+.academy_name  h1{
+  font-size: 1rem;
+}
+.desktop .academy_name  h1.bold_letters {
+  font-weight: bold;
+}
+
+.desktop .access{
+/*  border: 1px solid red; */  /* For debugging */
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  margin-right: 1rem;
+  font-weight: bold;
+  height: 4rem;
+}
+.desktop .access .sep {
+  width: 1rem;
+  height: 4rem;
+  background-color:  #4dce94;
+/*  border: 1px solid red; */
+}
+
+header .mobile {
+  display: none;
+}
+
+.banner {
+    display:flex;
+    background-color:  lightgrey;
+}
+.banner .banner_img {
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+.banner .banner_img img {
+}
+
+.banner_description {
+  border: 1px solid red;  /* For debugging */
+  width: 40%;
+  margin:auto;
+}
+.first_description, .second_description {
+  border: 1px solid blue;  /* For debugging */
+  /*font-weight: bold;*/
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.third_description , .fourth_description{
+  border: 1px solid red;  /* For debugging */
+  font-weight: bold;
+  font-size: 2rem;
+}
+.banner_description .button {
+  border: 1px solid blue;
+  background-color:  black;
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: bolder;
+}
+/* Main information images and the info text */
+.information {
+/*  border: 1px solid red; */ /* For debugging */
+  display:flex;
+}
+.information .info_main {
+  width: 60%;
+  border: 1px solid green;  /* For debugging*/
+  padding: 2rem 1.5rem 2rem 1.5rem;
+}
+.information .info_main_img img {
+/*  padding: 2rem 1.5rem 2rem 1.5rem; */
+}
+.information .info_main_text {
+    padding: 2rem 0 2rem 0;
+    font-family: Helvetica;
+}
+.info_main_text .main_heading {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 2;
+  padding: 1.5rem 0 1.5rem 0;
+
+}
+q {
+  quotes: '"' '"' "'" "'";
+}
+q::before {
+  content: open-quote;
+}
+q:after {
+  content: close-quote;
+}
+.info_main_text .main_statement {
+  font-size: 2rem;
+  line-height: 1.5;
+  padding-top: 1.5rem;
+  overflow: auto;
+}
+.info_main_text .main_resp_person {
+  font-size: 2rem;
+  line-height: 1.5;
+  padding-top: 1.5rem;
+}
+
+/*information details - Orientation, Our compus, guest lecture */
+.info_details {
+    border: 1px solid blue;  /* For debugging */
+    padding: 2rem 0 2rem 1rem;
+    width: 40%;
+}
+.info_details .info_orientation {
+  border: 1px solid black;  /* For debugging */
+  display:flex;
+}
+.info_details .info_details_img {
+  height:auto;
+  padding: 1rem;
+}
+.info_orientation .info_orientation_text {
+}
+
+.info_details .info_campus {
+  border: 1px solid black;  /* For debugging */
+  display:flex;
+}
+
+.info_campus .info_campus_text {
+}
+
+.info_details .info_lecturer {
+  border: 1px solid black;  /* For debugging */
+  display:flex;
+  background-color:  lightgrey;
+}
+
+.info_campus .info_lecturer_text {
+}
+
+.info_details   .info_title{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.info_details   .more_info{
+  font-size: 1.5rem;
+}
+.info_details  .read_more{
+  font-size: 1.5rem;
+  color: blue;
+}
+.courses {
+  background-color:  lightgrey;
+  padding: 2rem 4rem;
+}
+.courses .first_row {
+  border: 1px solid blue;  /* For debugging */
+  display:flex;
+}
+.courses .second_row {
+  padding-top: 1.5rem;
+  border: 1px solid black;  /* For debugging */
+  display:flex;
+}
+.Software, .Computer_art, .Data, .Business {
+  padding-right: 2rem;
+}
+
+@media only screen and (max-width: 760px) {
+
+  header .mobile {
+  /*  border: 1px solid red; */ /* For debugging */
+    border: 1px solid  gray;
+    display: flex;
+    justify-content: space-around;
+    height: 4rem;
+  /*  width: 100%; */
+  }
+  header .desktop {
+    display: none;
+  }
+}
+
+
+/* Footer */
+/*
+footer {
+  background-color: #9b9b9b;
+  padding: 1.5rem 2rem;
+}
+
+footer .content {
+  color: white;
+  display: flex;
+  font-size: .75rem;
+}
+
+footer .copyright {
+  flex-grow: 1;
+}
+
+@media only screen and (min-width: 760px) {
+  footer .content {
+    font-size: .625rem;
+  }
+}
+
+*/

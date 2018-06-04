@@ -1,0 +1,355 @@
+/* Universal Styles */
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+body {
+}
+
+header {
+  background-color: white;
+}
+
+header .content {
+/*border: 1px solid #fff;  For debugging */
+}
+
+header .desktop {
+  border: 1px solid  gray;
+  display: flex;;
+  align-items: center;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  height: 4rem;
+}
+.academy_name {
+  display: flex;
+  align-items: center;
+
+}
+.academy_name img {
+  height: 3rem;
+}
+.academy_name  h1{
+  font-size: 2rem;
+}
+.desktop .academy_name  h1.bold_letters {
+  font-weight: bold;
+}
+
+.desktop .access{
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  margin-right: 1rem;
+  font-weight: bold;
+  height: 4rem;
+}
+.desktop .access .sep {
+  width: 1rem;
+  height: 4rem;
+  background-color:  #4dce94;
+}
+header .mobile {
+  display: none;
+}
+
+/*   container for the content */
+.Content_container  {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom:  1px solid black;
+/*  border: 1px solid #fff; For debugging */
+}
+
+.desktop .banner {
+    display:flex;
+    background-color:  lightgrey;
+    font-family: Helvetica;
+}
+.Content_container .mobile {
+    display: none;
+}
+
+.mobile .banner {
+    background-color:  lightgrey;
+    font-family: Helvetica;
+}
+
+.banner .banner_img {
+   margin: 2rem 1.5rem;
+   width: 60%;
+}
+.desktop .banner .banner_img img {
+   height: auto;
+}
+
+.banner_description {
+  width: 40%;
+  margin:auto;
+}
+.first_description, .second_description{
+  font-weight: 900;
+  font-size: 4rem;
+  padding-bottom: 2rem;
+}
+
+ .third_description, .fourth_description{
+  font-weight: bold;
+  font-size: 3rem;
+}
+.banner_description .start_button {
+  background-color:  black;
+  color: white;
+  height: 6rem;
+  margin-top: 4rem;
+  text-align: center;
+  vertical-align: text-top;
+}
+
+.start_button  h2 {
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+/* Main information images and the info text */
+.information {
+  display:flex;
+}
+.information .info_main {
+  padding: 2rem 1.5rem 2rem 1.5rem;
+  width: 60%;
+}
+.information .info_main_img img {
+}
+.information .info_main_text {
+    padding: 2rem 0 2rem 0;
+    font-family: Helvetica;
+}
+.info_main_text .main_heading {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 1.5rem 0 1.5rem 0;
+}
+
+q {
+  quotes: '"' '"' "'" "'";
+}
+q::before {
+  content: open-quote;
+}
+q:after {
+  content: close-quote;
+}
+.info_main_text .main_statement {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  padding-top: 1.5rem;
+  overflow: auto;
+}
+.info_main_text .main_resp_person {
+  font-size: 2rem;
+  line-height: 1.4;
+  padding-top: 2.5rem;
+}
+
+/*information details - Orientation, Our compus, guest lecture */
+.Content_container .info_details {
+  border-left: 1px solid lightgrey;
+  margin-left: 1.5rem;
+  width: 40%;
+}
+.info_details .info_orientation,
+.info_details .info_campus,
+.info_details .info_lecturer {
+ border-top: 1px solid lightgrey;
+ padding-top: 2rem;
+ display:flex;
+}
+.info_details .info_lecturer {
+  background-color:  lightgrey;
+}
+
+.info_details .info_details_img {
+  height:auto;
+  width: 35%;
+  padding: 0 3rem 2rem 1.5rem;
+}
+
+.info_orientation .info_orientation_text,
+.info_campus .info_campus_text,
+.info_lecturer .info_lecturer_text
+{
+  width: 65%;
+  padding-top: 4rem;
+}
+
+.info_details   .info_title{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.info_details   .more_info{
+  font-size: 1.5rem;
+  padding-top: 1.5rem;
+}
+.info_details  .read_more{
+  font-size: 1.5rem;
+  padding-top: 1.5rem;
+  color: blue;
+}
+.courses {
+  background-color:  lightgrey;
+  padding: 2rem 4.5rem  2rem 4.5rem;
+  /* border: 1px solid green; */
+}
+.courses .section_heading {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: bold;
+  padding: 2rem 0 2rem 0;
+
+}
+.courses .first_row {
+  display:flex;
+
+}
+.courses .second_row {
+  padding-top: 1.5rem;
+  display:flex;
+}
+/* make border for every course */
+.courses .course {
+  border: 1px medium black;
+}
+.courses img {
+  height: auto;
+}
+
+.courses .course_description {
+  background-color: white;
+}
+.course_description .course_text {
+  padding : 1rem 0 4rem 1rem;
+  vertical-align: middle;
+}
+.course_description .computer_art_text {
+  padding : 1rem 0 1.5rem 1rem;
+}
+.courses .title {
+    font-size: 3rem;
+    font-weight: bold;
+    padding-top: 1rem;
+}
+.courses p {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+.Software, .Computer_art, .Data, .Business {
+  padding-right: 2rem;
+}
+
+/*  Now theseis vides, research, and location */
+.thesis_heading {
+  text-align: center;
+/*  border: 3px solid #73AD21; */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+.video_and_research {
+  /* border: 3px solid #73AD21;*/
+  display:flex;
+}
+.video_and_research .thesis_video {
+  width: 60%;
+  padding: 1.5rem;
+}
+.research{
+  width: 40%;
+}
+
+/* righ side of flex */
+.prototype {
+   /* border: 3px solid #73AD21; */
+   display:flex;
+   background-color: lightgrey;
+}
+.prototype img, .location img{
+  width: 35%;
+  height: auto;
+  padding: 0 1rem 1rem 1rem;
+}
+.prototype .research_description {
+  width: 65%;
+}
+
+.research h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-top: 2rem;
+}
+.research p {
+  font-size: 2.0rem;
+  padding-top: 1rem;
+}
+
+
+.location {
+  /* border: 3px solid #73AD21; */
+   display:flex;
+   margin-top: 1rem;
+}
+.location h2 {
+  padding-top: 4rem;
+}
+
+/* video and its description  */
+.video_and_research .thesis_description {
+  padding: 1.5rem 0 2rem 0
+}
+.thesis_description h2 {
+  padding-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.thesis_description p {
+  padding-bottom: 1rem;
+  font-size: 1.7rem;
+}
+
+footer  {
+  border: 1px solid black;
+}
+footer .content{
+  display: flex;
+  font-size: 1.5rem;
+  margin: 1rem  2rem 5rem  2rem;
+}
+footer .privacy{
+  position: absolute; right: 0;
+  padding-right: 2rem;
+}
+
+
+@media only screen and (max-width: 760px) {
+
+  header .mobile {
+  /*  border: 1px solid red;  For debugging */
+    border: 1px solid  gray;
+    display: flex;
+    justify-content: space-around;
+    height: 4rem;
+  /*  width: 100%; */
+  }
+  header .desktop {
+    display: none;
+  }
+  .Content_container .desktop {
+    display: none;
+  }
+}
